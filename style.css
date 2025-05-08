@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* A light grey background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./isometric-illustration.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 10px 10px #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 960px; /* Adjust as needed */
+    width: 100%;
+    
+}
+
+.isometric-view {
+    margin-bottom: 20px;
+    /* Add styling for the image if needed */
+    min-height: 50vh;
+}
+
+.main-navigation {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0px 40px 0px;
+    text-align: center;
+    width: 150px; /* Adjust as needed */
+}
+
+.nav-item h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.nav-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #eaea98;
+    min-height: 100px;
+}
+
+.nav-item li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.home {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.events {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.menu {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.location {
+    background-color: #ffc107; /* Yellow/Amber */
+    color: #333;
+}
+
+.contact {
+    background-color: #e83e8c; /* Pink */
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-bottom: 15px;
+    }
+}
