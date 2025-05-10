@@ -1,118 +1,127 @@
+/* Base styles for the body */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* A light grey background */
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('./isometric-illustration.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    font-family: sans-serif; /* Use a clean, sans-serif font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light grey background for fallback */
+    color: #333; /* Dark grey text color for readability */
+    display: flex; /* Flex layout for vertical stacking */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items horizontally */
+    background-image: url('./isometric-illustration.png'); /* Add background image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: cover; /* Scale image to cover the background */
 }
 
+/* Header styles */
 header {
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    text-shadow: 0 10px 10px #000;
+    color: white; /* White text */
+    padding: 20px; /* Inner spacing */
+    text-align: center; /* Center the header text */
+    width: 100%; /* Full-width header */
+    text-shadow: 0 10px 10px #000; /* Add a shadow for better contrast */
 }
 
+/* Main container wrapper */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 960px; /* Adjust as needed */
-    width: 100%;
-    
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    padding: 20px; /* Add spacing inside */
+    max-width: 960px; /* Limit maximum width */
+    width: 100%; /* Make it responsive */
 }
 
+/* Section to hold an isometric illustration or image */
 .isometric-view {
-    margin-bottom: 20px;
-    /* Add styling for the image if needed */
-    min-height: 50vh;
+    margin-bottom: 20px; /* Spacing below the section */
+    min-height: 50vh; /* Occupy half the viewport height */
+    /* You can add more styling for an image here */
 }
 
+/* Navigation container holding all sections */
 .main-navigation {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    display: flex; /* Use horizontal flex layout */
+    gap: 20px; /* Space between nav items */
+    margin-top: 20px; /* Space above the navigation */
 }
 
+/* Shared styles for each navigation item */
 .nav-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0px 40px 0px;
-    text-align: center;
-    width: 150px; /* Adjust as needed */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 0px 40px 0px; /* Padding for content spacing */
+    text-align: center; /* Center content */
+    width: 150px; /* Fixed width */
 }
 
+/* Heading inside nav item */
 .nav-item h2 {
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 10px;
+    color: #333; /* Dark heading text */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Space below heading */
 }
 
+/* List styling inside nav item */
 .nav-item ul {
-    list-style: none;
+    list-style: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
-    background: #eaea98;
-    min-height: 100px;
+    background: #eaea98; /* Light yellow background */
+    min-height: 100px; /* Ensure a minimum height */
 }
 
+/* List items inside nav */
 .nav-item li {
-    margin-bottom: 5px;
-    color: #666;
+    margin-bottom: 5px; /* Space between items */
+    color: #666; /* Grey text */
 }
 
+/* Section-specific background and text colors */
 .home {
-    background-color: #dc3545; /* Red */
-    color: white;
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
 }
 
 .events {
-    background-color: #007bff; /* Blue */
+    background-color: #007bff; /* Blue background */
     color: white;
 }
 
 .menu {
-    background-color: #28a745; /* Green */
+    background-color: #28a745; /* Green background */
     color: white;
 }
 
 .location {
-    background-color: #ffc107; /* Yellow/Amber */
-    color: #333;
+    background-color: #ffc107; /* Yellow background */
+    color: #333; /* Darker text for contrast */
 }
 
 .contact {
-    background-color: #e83e8c; /* Pink */
+    background-color: #e83e8c; /* Pink background */
     color: white;
 }
 
+/* Footer styling */
 footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
-    background-color: #333;
-    color: white;
+    text-align: center; /* Center footer text */
+    padding: 10px; /* Inner spacing */
+    margin-top: 20px; /* Space above footer */
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
 }
 
-/* Responsive design adjustments */
+/* Responsive design: adjust layout on smaller screens */
 @media (max-width: 768px) {
     .main-navigation {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center items */
     }
 
     .nav-item {
-        margin-bottom: 15px;
+        margin-bottom: 15px; /* Add spacing between stacked items */
     }
 }
