@@ -8,20 +8,40 @@ body {
     display: flex; /* Flex layout for vertical stacking */
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center-align items horizontally */
+    background: #ede0e0;
+    
+}
+
+
+.bg-eventimg{
     background-image: url('./isometric-illustration.png'); /* Add background image */
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-size: cover; /* Scale image to cover the background */
+    background-blend-mode: soft-light;
+}
+.bg-eventimg1{
+    background-blend-mode: normal;
 }
 
+.bg-eventimg header {
+    background: gray;
+    width: 100%;
+    text-align: center;
+}
 /* Header styles */
-header {
-    color: white; /* White text */
+.bg-eventimg1 header {
+    color: white !important; /* White text */
+    background: transparent;
     padding: 20px; /* Inner spacing */
     text-align: center; /* Center the header text */
     width: 100%; /* Full-width header */
     text-shadow: 0 10px 10px #000; /* Add a shadow for better contrast */
 }
 
+
+.bg-eventimg a{
+    text-decoration: none;
+}
 /* Main container wrapper */
 .container {
     display: flex; /* Use flex layout */
@@ -125,3 +145,32 @@ footer {
         margin-bottom: 15px; /* Add spacing between stacked items */
     }
 }
+
+
+
+.navbar-list{
+    display: flex;
+}
+.navbar-list li{
+    padding: 10px;
+    list-style-type: none
+
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
